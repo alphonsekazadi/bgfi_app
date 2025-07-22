@@ -1,0 +1,92 @@
+/* ========== STYLES GLOBAUX ========== */
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ========== CACHER ÉLÉMENTS PAR DÉFAUT DE STREAMLIT ========== */
+header, footer, #MainMenu {
+    visibility: hidden;
+}
+
+/* ========== SIDEBAR ========== */
+section[data-testid="stSidebar"] > div:first-child,
+section[data-testid="stSidebar"] > div:first-child * {
+    background-color: #155d27 !important; /* Vert foncé */
+    color: white !important;              /* Texte blanc forcé */
+    font-weight: 700 !important;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+/* ========== TITRE PRINCIPAL ========== */
+.title-container {
+    background-color: #e6f2ea;
+    padding: 1rem 2rem;
+    border-left: 6px solid #155d27;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.title-container h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+    color: #ff6600 !important;  /* Orange vif */
+}
+
+/* ========== CARDS GÉNÉRALES ========== */
+.card {
+    background-color: lightblue;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* ========== TABLEAU DE DONNÉES ========== */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+/* ========== BOUTONS ========== */
+button, button[kind="primary"], button:focus, button:hover, button:active {
+    background-color: #155d27 !important; /* Vert foncé */
+    color: white !important;
+    border-radius: 12px !important;
+    border: none !important;
+    font-weight: 700 !important;
+    padding: 12px 24px !important;
+    box-shadow: 0 6px 12px rgba(21, 93, 39, 0.4) !important;
+    transition: background-color 0.3s ease, transform 0.15s ease !important;
+    user-select: none !important;
+}
+
+button:hover, button[kind="primary"]:hover {
+    background-color: #1f7544 !important; /* Vert foncé clair */
+    transform: scale(1.05) !important;
+    box-shadow: 0 10px 20px rgba(31, 117, 68, 0.6) !important;
+}
+
+button:active, button[kind="primary"]:active {
+    background-color: #0e3a15 !important; /* Vert foncé sombre */
+    transform: scale(0.98) !important;
+    box-shadow: 0 4px 8px rgba(14, 58, 21, 0.7) !important;
+}
+
+/* ========== TITRES ET TEXTES ========== */
+h1, h2, h3, h4 {
+    color: #155d27;
+    font-weight: 700;
+}
+
+/* ========== INFOS, WARNINGS, ETC. ========== */
+.stAlert {
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    font-size: 15px !important;
+}
